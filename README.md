@@ -10,6 +10,8 @@ kafka-docker
 
 Dockerfile for [Apache Kafka](http://kafka.apache.org/)
 
+Medium [Apache Kafka: Docker Container and examples in Python](https://towardsdatascience.com/kafka-docker-python-408baf0e1088)
+
 The image is available directly from [Docker Hub](https://hub.docker.com/r/wurstmeister/kafka/)
 
 Tags and releases
@@ -44,15 +46,7 @@ Everytime the image is updated, all tags will be pushed with the latest updates.
 
 Start a cluster:
 
-- ```docker-compose up -d ```
-
-Add more brokers:
-
-- ```docker-compose scale kafka=3```
-
-Destroy a cluster:
-
-- ```docker-compose stop```
+- ```docker-compose -f docker-compose-expose.yml up```
 
 ## Note
 
